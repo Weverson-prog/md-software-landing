@@ -10,10 +10,21 @@
 <body>
     <!-- Navbar -->
     <div class="navbar bg-base-100 shadow-lg">
-        <div class="flex-1">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Produtos</a></li>
+                    <li><a>Serviços</a></li>
+                    <li><a>Sobre</a></li>
+                    <li><a>Contato</a></li>
+                </ul>
+            </div>
             <a class="btn btn-ghost normal-case text-xl">MD Software</a>
         </div>
-        <div class="flex-none">
+        <div class="navbar-end hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li><a>Produtos</a></li>
                 <li><a>Serviços</a></li>
@@ -28,20 +39,20 @@
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
             <div class="max-w-md">
-                <h1 class="mb-5 text-5xl font-bold">Soluções Tecnológicas Inovadoras</h1>
-                <p class="mb-5">Transforme seu negócio com nossas soluções de ponta. Oferecemos produtos e serviços tecnológicos para impulsionar sua empresa para o futuro.</p>
+                <h1 class="mb-5 text-4xl md:text-5xl font-bold">Soluções Tecnológicas Inovadoras</h1>
+                <p class="mb-5 text-sm md:text-base">Transforme seu negócio com nossas soluções de ponta. Oferecemos produtos e serviços tecnológicos para impulsionar sua empresa para o futuro.</p>
                 <button class="btn btn-primary">Comece Agora</button>
             </div>
         </div>
     </div>
 
     <!-- Produtos em Destaque -->
-    <div class="container mx-auto py-12">
-        <h2 class="text-3xl font-bold text-center mb-8">Produtos em Destaque</h2>
+    <div class="container mx-auto py-12 px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Produtos em Destaque</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Produto 1 -->
             <div class="card bg-base-100 shadow-xl">
-                <figure><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Consultoria" /></figure>
+                <figure><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Consultoria" class="w-full h-48 object-cover" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">Consultoria</h2>
                     <p>Soluções personalizadas para o seu negócio.</p>
@@ -52,7 +63,7 @@
             </div>
             <!-- Produto 2 -->
             <div class="card bg-base-100 shadow-xl">
-                <figure><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Desenvolvimento" /></figure>
+                <figure><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Desenvolvimento" class="w-full h-48 object-cover" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">Desenvolvimento</h2>
                     <p>Criação de soluções tecnológicas inovadoras.</p>
@@ -63,7 +74,7 @@
             </div>
             <!-- Produto 3 -->
             <div class="card bg-base-100 shadow-xl">
-                <figure><img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Suporte" /></figure>
+                <figure><img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Suporte" class="w-full h-48 object-cover" /></figure>
                 <div class="card-body">
                     <h2 class="card-title">Suporte</h2>
                     <p>Assistência técnica especializada e contínua.</p>
