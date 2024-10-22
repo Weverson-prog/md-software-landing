@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD Software - Soluções Tecnológicas</title>
+    <title>Prático - Soluções Tecnológicas</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="logo.png" type="image/png"> <!-- Adicionando o favicon -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pratico-aqua': '#7FFFD4',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .banner-bg {
+            background-image: url('https://img.freepik.com/vetores-gratis/parede-cinza-com-tres-focos-de-luz-caindo-sobre-ela_1017-27235.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .logo-text-spacing {
+            margin-bottom: -60px; /* Margem negativa aumentada para -60px */
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <div class="navbar bg-base-100 shadow-lg">
+    <div class="navbar bg-white text-black shadow-lg">
         <div class="navbar-start">
             <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52">
                     <li><a>Produtos</a></li>
                     <li><a>Serviços</a></li>
                     <li><a>Sobre</a></li>
                     <li><a>Contato</a></li>
                 </ul>
             </div>
-            <a class="btn btn-ghost normal-case text-xl">MD Software</a>
+            <a class="btn btn-ghost normal-case text-xl">Prático</a>
         </div>
         <div class="navbar-end hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
@@ -34,14 +56,14 @@
         </div>
     </div>
 
-    <!-- Hero Section with Background Image -->
-    <div class="hero min-h-screen" style="background-image: url('https://www.noweb.io/uploads/8090f1e3c5ed59cc4861c9f8110c99d3.jpg');">
+    <!-- Banner Section com Logo Grande -->
+    <div class="hero min-h-screen banner-bg">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
-            <div class="max-w-md">
-                <h1 class="mb-5 text-4xl md:text-5xl font-bold">Soluções Tecnológicas Inovadoras</h1>
-                <p class="mb-5 text-sm md:text-base">Transforme seu negócio com nossas soluções de ponta. Oferecemos produtos e serviços tecnológicos para impulsionar sua empresa para o futuro.</p>
-                <button class="btn btn-primary">Comece Agora</button>
+            <div class="max-w-md flex flex-col items-center">
+                <img src="logo.png" alt="Prático Logo" class="w-96 logo-text-spacing">
+                <p class="text-sm md:text-base relative z-10">Transforme seu negócio com nossas soluções de ponta. Oferecemos produtos e serviços tecnológicos para impulsionar sua empresa para o futuro.</p>
+                <button class="btn bg-pratico-aqua text-black hover:bg-pratico-aqua/80 mt-4">Comece Agora</button>
             </div>
         </div>
     </div>
@@ -57,7 +79,7 @@
                     <h2 class="card-title">Consultoria</h2>
                     <p>Soluções personalizadas para o seu negócio.</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Saiba mais</button>
+                        <button class="btn bg-pratico-aqua text-black hover:bg-pratico-aqua/80">Saiba mais</button>
                     </div>
                 </div>
             </div>
@@ -68,7 +90,7 @@
                     <h2 class="card-title">Desenvolvimento</h2>
                     <p>Criação de soluções tecnológicas inovadoras.</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Saiba mais</button>
+                        <button class="btn bg-pratico-aqua text-black hover:bg-pratico-aqua/80">Saiba mais</button>
                     </div>
                 </div>
             </div>
@@ -79,7 +101,7 @@
                     <h2 class="card-title">Suporte</h2>
                     <p>Assistência técnica especializada e contínua.</p>
                     <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Saiba mais</button>
+                        <button class="btn bg-pratico-aqua text-black hover:bg-pratico-aqua/80">Saiba mais</button>
                     </div>
                 </div>
             </div>
